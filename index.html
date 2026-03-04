@@ -2,76 +2,153 @@
 <html>
 <head>
     <title>Vivekanandhan | Data Science Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <style>
         body {
-            font-family: Arial;
-            margin: 40px;
-            background-color: #f4f4f4;
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #0f172a;
+            color: #f1f5f9;
         }
-        h1 {
-            color: #2c3e50;
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
         }
-        h2 {
-            color: #34495e;
+
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
         }
+
+        header p {
+            font-size: 18px;
+            color: #94a3b8;
+        }
+
         .section {
-            margin-top: 30px;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
         }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background: #334155;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
         a {
-            color: #0077cc;
             text-decoration: none;
+            color: #38bdf8;
         }
-        a:hover {
-            text-decoration: underline;
+
+        .skills {
+            text-align: center;
+            font-size: 18px;
+            color: #cbd5e1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+            margin-top: 40px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #38bdf8;
+            color: black;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
         }
     </style>
 </head>
+
 <body>
 
+<header>
     <h1>Hi, I'm Vivekanandhan 👋</h1>
-    <h2>Aspiring Data Scientist</h2>
+    <p>Aspiring Data Scientist | Machine Learning Enthusiast</p>
+</header>
 
-    <div class="section">
-        <h3>📊 Projects</h3>
-        <ul>
-            <li>
-                <a href="https://github.com/vivekanandhan1589-cpu/Portuguese-Bank-Marketing">
-                    Portuguese Bank Marketing (Classification)
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/vivekanandhan1589-cpu/Insurance-Cost-Prediction">
-                    Insurance Cost Prediction (Regression)
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/vivekanandhan1589-cpu/Customer-Transaction-Prediction">
-                    Customer Transaction Prediction (Classification)
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/vivekanandhan1589-cpu/House-Price-Prediction">
-                    House Price Prediction (Regression)
-                </a>
-            </li>
-        </ul>
-    </div>
+<section class="section">
+    <h2>🚀 Projects</h2>
+    <div class="projects">
 
-    <div class="section">
-        <h3>🛠 Skills</h3>
-        <p>
-            Python | Pandas | NumPy | Scikit-learn | Machine Learning |
-            Data Analysis | SMOTE | Model Evaluation
-        </p>
-    </div>
+        <div class="card">
+            <h3>Portuguese Bank Marketing</h3>
+            <p>Classification model to predict customer subscription using ML techniques.</p>
+            <a href="https://github.com/vivekanandhan1589-cpu/Portuguese-Bank-Marketing">View Project →</a>
+        </div>
 
-    <div class="section">
-        <h3>📫 Contact</h3>
-        <p>Email: vivekanandhan1589@gmail.com</p>
-        <p>
-            <a href="https://github.com/vivekanandhan1589-cpu">GitHub Profile</a>
-        </p>
+        <div class="card">
+            <h3>Insurance Cost Prediction</h3>
+            <p>Regression model to predict medical insurance charges with high R² score.</p>
+            <a href="https://github.com/vivekanandhan1589-cpu/Insurance-Cost-Prediction">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>Customer Transaction Prediction</h3>
+            <p>Banking dataset prediction using SMOTE & advanced ML models.</p>
+            <a href="https://github.com/vivekanandhan1589-cpu/Customer-Transaction-Prediction">View Project →</a>
+        </div>
+
+        <div class="card">
+            <h3>House Price Prediction</h3>
+            <p>Built regression model achieving high accuracy using feature engineering.</p>
+            <a href="https://github.com/vivekanandhan1589-cpu/House-Price-Prediction">View Project →</a>
+        </div>
+
     </div>
+</section>
+
+<section class="section">
+    <h2>🛠 Skills</h2>
+    <div class="skills">
+        Python • Pandas • NumPy • Scikit-Learn • Machine Learning • 
+        Data Analysis • SMOTE • Model Evaluation • EDA
+    </div>
+</section>
+
+<section class="section" style="text-align:center;">
+    <h2>📫 Contact</h2>
+    <p>Email: vivekanandhan1589@gmail.com</p>
+    <a href="https://github.com/vivekanandhan1589-cpu" class="btn">GitHub Profile</a>
+</section>
+
+<footer>
+    © 2026 Vivekanandhan | Data Science Portfolio
+</footer>
 
 </body>
 </html>
